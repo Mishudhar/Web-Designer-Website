@@ -1,0 +1,292 @@
+
+/* -----REMOVING DEFAULT MARGIN PLACED BY BROWSER------- */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin-left: 1%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.nav-items{
+    display: flex;
+    padding: 5px;
+    color: rgb(67 56 202);
+    margin-left: -10%; 
+}
+
+.nav-item{
+    font-size: 15px;
+    padding: 0px 20px;
+    color: rgb(67 56 202);
+}
+
+.nav-item:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+nav img{
+    width: 120px;
+}
+
+nav button{
+    font-size: 15px;
+    background: linear-gradient(50deg,
+    rgba(90,11,216,0.658),
+    rgba(236,10,168,0.658));
+    margin-right: 5%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.intro-section{
+    display: flex;
+}
+
+.left-section h1{
+    font-size: 90px;
+    color: rgb(67 56 202);
+    margin-top: 15%;
+}
+
+.left-section h4{
+    font-size: 20px;
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.learn-more-btn{
+    font-size: 25px;
+    background: linear-gradient(
+        50deg,
+        rgb(150,92,242),
+        rgb(255,138,220)
+    );
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 35px;
+}
+
+.vector-dot +img{
+    height: 860px;
+    width: 72%;
+    background:url("../images/backcover.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding-top: 4%;
+ 
+}
+
+.vector-img{
+    position: absolute;
+    bottom: -5%;
+    right: 62%;
+}
+
+.vector-dot{
+    position: absolute;
+    right: 63.5%;
+    bottom: 4%;
+}
+
+button,.nav-item{
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(
+        50deg,
+        rgba(90,11,216,0.658),
+        rgba(236,10,168,0658)
+    );
+    color: black;
+    border-radius: 30px;
+    transition: all 1s ease;
+    box-shadow: opx 5px 100px rgba(25,25,255,9);
+}
+
+nav button:hover{
+    color: black;
+
+}
+
+/* ----RESPONSIVE DESIGN FOR DIFFERENT SCREEN SIZE---- */
+
+ @media screen and (max-width:1400px) {
+    
+    .left-section h1{
+        font-size: 80px;
+
+    }
+    .vector-dot +img{
+        height: 760px;
+        width: 72%;
+        background:url("../images/backcover.svg");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: cover;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        padding-top: 4%;
+        padding-bottom: 5%;
+     
+    }
+} 
+
+@media screen and (max-width:1250px) {
+    
+    .left-section h1{
+        font-size: 60px;
+    }
+ 
+}
+
+@media screen and (max-width:1050px) {
+    
+    .left-section h1{
+        font-size: 50px;
+        color: rgb(67 56 202);
+        margin-top: 15%;
+    }
+    .vector-dot +img{
+        height: 660px;
+        width: 62%;
+    }
+    
+    .learn-more-btn{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:850px) {
+    .nav-item{
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width:800px) {
+
+    nav img{
+        width: 100px;
+    }
+
+    .nav-item{
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+    
+    .left-section h1{
+        font-size: 50px;
+    }
+
+    .vector-dot +img{
+        height: 660px;
+        width: 55%;
+     }
+
+    nav button{
+        font-size: 10px;
+        padding: 0px 15px;
+      };
+
+    .learn-more-btn{
+        font-size: 15px;
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width:630px) {
+
+    .nav-items{
+        margin-left: 10px;
+    }
+
+    .nav-item{
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+
+    nav img{
+        width: 80px;
+    }
+    
+    .left-section{
+        margin-top: 15%;
+    }
+    .left-section h1{
+        font-size: 40px;
+
+    }
+
+    .left-section h4{
+        font-size: 12px;
+        width: 35%;
+      
+    }
+
+    .vector-dot +img{
+        height: 660px;
+        width: 55%;
+    }
+
+    .learn-more-btn{
+        font-size: 10px;
+        padding: 15px 25px;
+    }
+
+
+  
+}
+
+@media screen and (max-width:530px) {
+    nav img{
+        width: 60px;
+    }
+
+
+    .left-section{
+        margin-top: 15%;
+    }
+    .left-section h1{
+        font-size: 30px;
+
+    }
+
+
+    .vector-dot +img{
+        height: 600px;
+        width: 55%;
+    }
+
+    .learn-more-btn{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+}
